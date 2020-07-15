@@ -9,7 +9,7 @@ const feedback = document.querySelector(".feedback");
 
 // Create three choice elements.
 const goodTip = document.createElement("option");
-goodTip.text = "Good  -20%";
+goodTip.text = "Great  -20%";
 goodTip.value = 1;
 
 const okayTip = document.createElement("option");
