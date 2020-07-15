@@ -1,3 +1,3 @@
 A simple program that calculates tips based on the amount of the bill, how many people shared the bill and the tip percentage. 
 
-It'S built with vanilla javascript, no libraries used.
+It's built with vanilla javascript, no libraries used.
