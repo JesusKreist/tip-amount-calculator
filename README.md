@@ -1,2 +1,3 @@
-# Tip-Form-JavaScript-Project
-A project that calculates a tip, given a bill amount and the number of people splitting the bill.
+A simple program that calculates tips based on the amount of the bill, how many people shared the bill and the tip percentage. 
+
+It'S built with vanilla javascript, no libraries used.
