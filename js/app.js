@@ -38,22 +38,22 @@ const calculateTip = (event) => {
     let tip;
     switch (true) {
       case (rating === 1):
-        tip = (billAmount / billSplit) * 0.20;
+        tip = billAmount * 0.20;
         break;
       case (rating === 2):
-        tip = (billAmount / billSplit) * 0.10;
+        tip = billAmount * 0.10;
         break;
       case (rating === 3):
-        tip = (billAmount / billSplit) * 0.05;
+        tip = billAmount * 0.05;
         break;
       default:
         console.log(`The rating is ${rating}`);
     };
-    let newTotal = (tip * billSplit) + billAmount;
+    let newTotal = tip + billAmount;
     let personalBill = newTotal / billSplit;
     results.children[2].style.display = "block";
     //  Get the "$" elements nested in the divs and set them to the values of the operations.
-    nestedHtml[0].innerHTML = `: $${tip.toFixed(2)}`;
+    nestedHtml[0].innerHTML = `: $${(tip).toFixed(2)}`;
     nestedHtml[2].innerHTML = `: $${newTotal.toFixed(2)}`;
     nestedHtml[4].innerHTML = `: $${personalBill.toFixed(2)}`;
     // check if the number of people who split the bill is 1 and hide the redundant (Each person owes statement)
@@ -70,9 +70,9 @@ const calculateTip = (event) => {
         totalBill.value = "";
         totalSplit.value = "";
         tipChoice.value = 0;
-      }, 5000);
+      }, 2000);
       results.style.display = "block";
-    }, 5000);
+    }, 2000);
     loader.style.display = "block";
     // feedback text-center alert text-capitalize p-1 showItem alert-danger
   } else {
