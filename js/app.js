@@ -59,7 +59,7 @@ const calculateTip = (event) => {
     // check if the number of people who split the bill is 1 and hide the redundant (Each person owes statement)
     if (billSplit == 1) {
       results.children[2].style.display = "none";
-    }
+    };
     // Load the gif by setting it's display to block and after at least five seconds, make it none.
     //  Nest anothet timeout function that shows the results by setting it's display to block.
     //  Inside the nested tieout, set the results display to none to hide it and also reset the input values.
